@@ -56,7 +56,7 @@ jobs:
       run: |
         git config --global user.name "SigeRios"
         git config --global user.email "happy.abdelilah@gmail.com"
-        git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/SigeRios/image_name.git
+        git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/SigeRios/diabetes-project.git
         git add models/pipeline.pkl
         git commit -m "Update model after retraining on $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
         git push
