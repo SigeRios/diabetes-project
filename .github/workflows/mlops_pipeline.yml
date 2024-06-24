@@ -64,7 +64,7 @@ jobs:
     - name: Build Docker image
       if: env.drift == 'true'
       run: |
-        docker build -t kabdelilah/image_name -f dockerfile .
+        docker build -t kabdelilah/image_name -f Dockerfile .
 
     - name: Log in to Docker Hub
       if: env.drift == 'true'
